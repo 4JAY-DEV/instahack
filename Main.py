@@ -1,24 +1,59 @@
 import os
+import time
+import geoip2.database
 
 os.system("clear")
-print("\t  \033[93m.
-print("\t 8888888b.  Y88b   d88P  888b     888  \t")
-print("\t 888   Y88b  Y88b d88P   8888b   888 \t")
-print("\t 888    888   Y88o88P    88888b  888 \t")
-print("\t 888   d88P    Y888P     888Y88b 888 \t")
-print("\t 8888888P     d888b     888 Y88b888  \t")
-print("\t 888 T88b     d88888b    888  Y88888 \t")
-print("\t 888  T88b   d88P Y88b  888   Y8888  \t")
-print("\t 888   T88b d88P   Y88b 888    Y888  \t") 
-print("")                                                                                                                                             
-print("\t \33[94m⊰᯽⊱┈──╌❊ CODED BY R3X1N ❊╌──┈⊰᯽⊱ \t")
-print("")
-print("\t  \033[36m┏━━━━━°❀•°:🎀 - 🎀:°•❀°━━━━━┓\t")
-print("\n\t   \033[93m[#] \033[94mAUTHOR   :  \033[92mPSYCHO REXIN                                                          \t ")
-print("\t  \033[93m [#] \033[94mGITHUB  : \033[92mgithub.com/PSYCHO-REXIN                                                         \t  ")
-print("\t  \033[93m [#] \033[94mINSTA  : \033[92mpsycho_rexin_ofc_                                                         \t")
-print("\t  \033[36m┗━━━━━°❀•°:🎀 - 🎀:°•❀°━━━━━┛\t")
+print ("\033[1;32m[+] Downloading && INSTALLING Figlet")
+time.sleep(1.05)
+
+os.system("pkg install figlet")
+
+os.system("clear")
+print ("\033[1;32m[+] Figlet Installed Successfully")
+time.sleep(1.05)
+os.system("clear)
 
 
 
-        
+from termcolor import colored
+
+
+
+os.system("clear")
+
+
+print(colored("==================================================================" , 'red'))
+os.system('figlet IP-finder')
+print(colored("==================================================================" , 'red'))
+
+print ( "                        \033[34m COD3D BY R3X1N             ")
+print ( "                        \033[  INSTA:-psycho_rexin_ofc_               ")
+print(".")
+print ( "                        \033[34m CONTACT-ME:-https://t.me/psycho_rexin_ofc             ")
+
+
+
+def find_ip_location(ip_address):
+    # Read the MaxMind DB file
+    db_file = '/path/to/GeoLite2-City.mmdb'
+    reader = geoip2.database.Reader(db_file)
+
+    # Look up the IP address
+    response = reader.city(ip_address)
+
+    # Extract the location details
+    city = response.city.name
+    region = response.subdivisions.most_specific.name
+    country = response.country.name
+
+    location = {
+        "city": city,
+        "region": region,
+        "country": country
+    }
+
+    return location
+
+ip_address = "8.8.8.8"  # Google's public DNS
+location = find_ip_location(ip_address)
+print(location)
